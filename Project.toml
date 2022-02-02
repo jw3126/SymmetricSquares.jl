@@ -1,6 +1,6 @@
 name = "SymmetricSquares"
 uuid = "283ae955-1bf7-4612-81d5-f51f447eed2e"
-authors = ["Elias Kempf <34234056+icetube23@users.noreply.github.com> and contributors"]
+license = "MIT"
 version = "0.1.0"
 
 [compat]
