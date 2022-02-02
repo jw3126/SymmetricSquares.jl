@@ -7,7 +7,7 @@ r180(x::AbstractMatrix) = reverse(x)
 
 # compound implementations
 r90(x::AbstractMatrix) = fy(x') # fy(x') is slightly more efficient than fy(tr(x))
-r270(x::AbstractMatrix) = tr(fy(x))
+r270(x::AbstractMatrix) = fx(x') # fx(x') is slightly more efficient than fx(tr(x))
 trr(x::AbstractMatrix) = r180(x') # r180(x') is slightly more efficient than r180(tr(x))
 
 # group operation for elements of the symmetry group
