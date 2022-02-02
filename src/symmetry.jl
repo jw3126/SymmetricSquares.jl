@@ -2,7 +2,7 @@
 e(x::AbstractMatrix) = x
 tr(x::AbstractMatrix) = collect(x')
 fy(x::AbstractMatrix) = x[:,reverse(axes(x, 2))]
-r180(x::AbstractMatrix) = reverse(x)
+r180(x::AbstractMatrix) = reverse(x; dims=:)
 
 # compound implementations
 r90(x::AbstractMatrix) = fy(tr(x))
