@@ -1,8 +1,8 @@
 # direct implementations
 e(x::AbstractMatrix) = x
 tr(x::AbstractMatrix) = collect(x')
-fx(x::AbstractMatrix) = reverse(x, dims=1)
-fy(x::AbstractMatrix) = reverse(x, dims=2)
+fx(x::AbstractMatrix) = reverse(x; dims=1)
+fy(x::AbstractMatrix) = reverse(x; dims=2)
 r180(x::AbstractMatrix) = reverse(x)
 
 # compound implementations
